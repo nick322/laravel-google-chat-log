@@ -1,0 +1,32 @@
+{
+    "name": "nick/laravel-google-chat-log",
+    "description": "Sending the logs to google chat.",
+    "keywords": ["laravel", "log", "google-chat"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nick_huang",
+            "email": "nick80322@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "monolog/monolog": "^2.0",
+        "illuminate/support": "^7.0|^8.0",
+        "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.2",
+        "nesbot/carbon": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nick\\GoogleChatLog\\": "src/"
+        }
+    },
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "Nick\\GoogleChatLog\\LogServiceProvider"
+            ]
+        }
+    }
+}
